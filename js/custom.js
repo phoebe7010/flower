@@ -20,9 +20,11 @@ $btns.on("click", function(e){
         $btns.children("a").removeClass("on"); 
         $btns.eq(i).children("a").addClass("on"); 
     
+        $boxs.removeClass("on"); 
         $boxs.fadeOut(speed); 
         $boxs.eq(i).fadeIn(speed, function(){
             isDone = true; 
+            $boxs.eq(i).addClass("on"); 
         });
     }
     
