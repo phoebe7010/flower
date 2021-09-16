@@ -9,7 +9,7 @@ let isDone = true;
 $btns.on("click", function(e){
     e.preventDefault(); 
 
-    let isOn = $(this).chilren("a").hasClass("on"); 
+    let isOn = $(this).children("a").hasClass("on"); 
     if(isOn) return; 
 
     if(isDone){
